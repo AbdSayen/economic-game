@@ -14,4 +14,9 @@ public class Region : MonoBehaviour
             GetComponent<Image>().color = new Color32(230, 100, 0, 225);
         }
     }
+
+    public void OnMouseDown()
+    {
+        Debug.Log("sdad");
+    }
 }
