@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class WindowsManager : MonoBehaviour
 {
@@ -10,10 +11,6 @@ public class WindowsManager : MonoBehaviour
     public void StartGame()
     {
         SceneManager.LoadScene(1);
-    }
-    public void OpenRegionProp()
-    {
-        regionProp.SetActive(true);
     }
     public void CloseRegionProp()
     {
