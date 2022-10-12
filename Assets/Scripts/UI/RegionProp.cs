@@ -6,4 +6,9 @@ public class RegionProp : MonoBehaviour
 {
     public GameObject attackBtn;
     public GameObject regionNameText;
+
+    public void clickedAttackBtn()
+    {
+        Region.region.BeAttacked();
+    }
 }

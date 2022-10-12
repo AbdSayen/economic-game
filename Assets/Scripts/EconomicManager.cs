@@ -7,7 +7,7 @@ public class EconomicManager : MonoBehaviour
 {
 	public Region playerRegion;
 	public GameObject moneyCounter;
-
+	
 	private void Start()
 	{
 		StartCoroutine(AddMoney());
@@ -18,12 +18,12 @@ public class EconomicManager : MonoBehaviour
         moneyCounter.GetComponent<Text>().text = $"Money: {playerRegion.money}";
     }
 
-    IEnumerator AddMoney() //delete after test
+    IEnumerator AddMoney()
 	{
 		while(true)
 		{
-			yield return new WaitForSeconds(1);
-			playerRegion.money += 1.5f;
+			yield return new WaitForSeconds(10);
+			playerRegion.money += playerRegion.earningsForStep;
 		}
 	}
 }
